@@ -1,5 +1,22 @@
 venv/
 __pycache__/
+db.sqlite3# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+
+# Database
 db.sqlite3
+
+# Django secrets & environment variables
+.env
+
+# Logs
+*.log
+
+# Cache
+*.pyc
+
 *.pyc
 *.pyo
