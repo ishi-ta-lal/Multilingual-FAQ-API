@@ -13,30 +13,48 @@ This is a Django REST Framework (DRF) project that provides an FAQ API with mult
 ## Installation Guide
 
 ### 1. Clone the Repository
-```bash git clone https://github.com/YOUR_USERNAME/multilingual-faq-api.git```
-```bash cd multilingual-faq-api```
+```bash 
+git clone https://github.com/YOUR_USERNAME/multilingual-faq-api.git
+```
+```bash 
+cd multilingual-faq-api
+```
 
 ### 2. Create and Activate a Virtual Environment
-```bash python -m venv venv```
-```bash source venv/bin/activate``` (For Mac/Linux)  
-```bash venv\Scripts\activate``` (For Windows)
+```bash 
+python -m venv venv
+```
+```bash
+venv\Scripts\activate
+``` 
 
 ### 3. Install Dependencies
-```bash pip install -r requirements.txt```
+```bash 
+pip install -r requirements.txt
+```
 
 ### 4. Configure Redis for Caching
 Start Redis:
-```bash redis-server``` (Linux/Mac)  
+```bash 
+redis-server
+```
+(Linux/Mac)  
 For Windows, install [Memurai](https://www.memurai.com/).
 
 ### 5. Run Migrations
-```bash python manage.py migrate```
+```bash
+python manage.py migrate
+```
 
 ### 6. Create a Superuser for Admin Access
-```bash python manage.py createsuperuser```
+```bash 
+python manage.py createsuperuser
+```
 
 ### 7. Start the Server
-```bash python manage.py runserver```
+```bash 
+python manage.py runserver
+```
 
 Now, open:
 - **API**: http://127.0.0.1:8000/api/faqs/
@@ -47,13 +65,19 @@ Now, open:
 ## API Usage
 
 ### 1. Get All FAQs (English - Default)
-```bash curl http://127.0.0.1:8000/api/faqs/```
+```bash 
+curl http://127.0.0.1:8000/api/faqs/
+```
 
 ### 2. Get FAQs in Hindi
-```bash curl http://127.0.0.1:8000/api/faqs/?lang=hi```
+```bash 
+curl http://127.0.0.1:8000/api/faqs/?lang=hi
+```
 
 ### 3. Get FAQs in Bengali
-```bash curl http://127.0.0.1:8000/api/faqs/?lang=bn```
+```bash 
+curl http://127.0.0.1:8000/api/faqs/?lang=bn
+```
 
 ---
 
